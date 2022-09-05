@@ -12,6 +12,5 @@
 11. THEN I can save my initials and my score*/
 
 
-var h1 = document.querySelector("h1");
-h1.textContent = "Quiz";
-h1.setAttribute("style","display: grid; place-items: center; margin:auto auto; height: 100px; border: 2px solid black; font-size: 50px;");
+var h1 = document.querySelectorAll("h1");
+h1[0].textContent = "~ Quiz ~";
