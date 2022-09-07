@@ -13,9 +13,26 @@
 
 
 var h1 = document.querySelectorAll("h1");
-var startButton = document.querySelector("#strBtn")
+var startButton = document.querySelector("#strBtn");
+var countDown = document.getElementById("time");
 var time = 100;
 
 h1[0].textContent = "~ Quiz ~";
-startButton.textContent = "Start"
-startButton.setAttribute("style", "font-size: 70px; background-color: black; color: white; border-radius: 15px; cursor: pointer;" )
+
+startButton.textContent = "Start";
+
+startButton.setAttribute("style", "font-size: 70px; background-color: black; color: white; border-radius: 15px; cursor: pointer;");
+
+startButton.addEventListener("click", quiz);
+
+function quiz() {
+    var startTime = setInterval(function () {
+        time--;
+        countDown.innerHTML = time
+
+        if (time === 0) {
+            clearInterval(startTime);
+        }
+
+    }, 1000);
+}
