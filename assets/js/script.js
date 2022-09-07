@@ -13,4 +13,9 @@
 
 
 var h1 = document.querySelectorAll("h1");
+var startButton = document.querySelector("#strBtn")
+var time = 100;
+
 h1[0].textContent = "~ Quiz ~";
+startButton.textContent = "Start"
+startButton.setAttribute("style", "font-size: 70px; background-color: black; color: white; border-radius: 15px; cursor: pointer;" )
