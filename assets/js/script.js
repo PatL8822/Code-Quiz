@@ -23,9 +23,9 @@ startButton.textContent = "Start";
 
 startButton.setAttribute("style", "font-size: 70px; background-color: black; color: white; border-radius: 15px; cursor: pointer;");
 
-startButton.addEventListener("click", quiz);
+startButton.addEventListener("click", quiztime);
 
-function quiz() {
+function quiztime() {
     var startTime = setInterval(function () {
         time--;
         countDown.innerHTML = time
@@ -35,4 +35,10 @@ function quiz() {
         }
 
     }, 1000);
+    quiz()
+}
+
+function quiz() {
+
+
 }
