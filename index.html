@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- A defer js link will load faster and in order just the same as placing the script at the bottum of the HTML page. I chose this route to keep everthing close and easy to get to. this is prosses is better for larger files. I just want to get into the habbit of linking my js file like this.  -->
+    <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen&display=swap" rel="stylesheet">
+
+    <!-- A defer js link will load faster and in order just the same as placing the script at the bottum of the HTML page. I chose this route to keep everthing close and easy to get to. I feel this is prosses is better for larger files. I just want to get into the habbit of linking my js file like this.  -->
     <script defer src="assets/js/script.js"></script>
     <title>Code Quiz</title>
 </head>
@@ -15,26 +17,25 @@
     <header>
         <h1></h1>
         <ul>
+            <!-- change link to btn-->
             <li id="highScor"><a href="">View High Scores</a></li>
             <li>Time:</li>
             <li id="time"></li>
         </ul>
     </header>
     <section>
-    <h2>Click the start button to take quize!!!</h2>
-    <p class="btn"><button id="strBtn"></button></p>
+        <h2 id="hide-two">Click the start button to take quize!!!</h2>
+        <p class="btn"><button id="strBtn"></button></p>
     </section>
-    <main class="container">
-        <p id="question-container" class="hide"></p>
-        <div id="question">Question</div>
+    <main class="container" id="hide">
+        <p id="question"></p>
         <p id="answer-buttons" class="btn-grid">
-            <button class="qbtn">Answer 1</button>
-            <button class="qbtn">Answer 2</button>
-            <button class="qbtn">Answer 3</button>
-            <button class="qbtn">Answer 4</button>
+            <button id="ansOne" class="qbtn">Answer 1</button>
+            <button id="ansTwo" class="qbtn">Answer 2</button>
+            <button id="ansThree" class="qbtn">Answer 3</button>
+            <button id="ansFour" class="qbtn">Answer 4</button>
         </p>
-        <p id="right-wrong"></p>
-        <p class="controls"></p>
+        <p id="confirm" class="confirmation"></p>
     </main>
 </body>
 
