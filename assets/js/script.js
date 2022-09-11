@@ -12,19 +12,21 @@
 11. THEN I can save my initials and my score*/
 
 // below are all the containers needed for JS
-var question = document.getElementById("question")
-var clicked = false;
-var ans1 = document.getElementById("ansOne")
-const ans2 = document.getElementById("ansTwo")
-const ans3 = document.getElementById("ansThree")
-const ans4 = document.getElementById("ansFour")
+const ans2 = document.getElementById("ansTwo");
+const ans3 = document.getElementById("ansThree");
+const ans4 = document.getElementById("ansFour");
+var question = document.getElementById("question");
+var ans1 = document.getElementById("ansOne");
 var hideH2 = document.getElementById("hide-two");
 var container = document.getElementById("hide");
 var h1 = document.querySelectorAll("h1");
 var startButton = document.querySelector("#strBtn");
 var countDown = document.getElementById("time");
+var confirmMsg = document.getElementById("confirm");
 var time = 100;
-var confirm = document.getElementById("confirm")
+var score = [];
+var ifTimeEnds = [];
+ifTimeEnds * 20
 
 // setting the text h1 tag
 h1[0].textContent = "~ Quiz ~";
@@ -58,66 +60,94 @@ function quize() {
     questionOne()
 }
 
-function questionOne(){
+function questionOne() {
+
     question.textContent = "What elements MUST you have in HTML ?"
-    ans1.textContent = "body, html, title, head, DOCTYPE, header"
-    ans2.textContent = "body, main, title, head, DOCTYPE, header"
-    ans3.textContent = "head, html, DOCTYPE, body, title, meta"
-    ans4.textContent = "title, html, body, head, link, footer"
 
-    ans1.addEventListener("click", truee)
+    ans1.textContent = "A. body, html, title, head, DOCTYPE, header"
+    ans2.textContent = "B. body, main, title, head, DOCTYPE, header"
+    ans3.textContent = "C. head, html, DOCTYPE, body, title, meta"
+    ans4.textContent = "D. title, html, body, head, link, footer"
+
+    ans1.addEventListener("click", falsee)
+    ans2.addEventListener("click", falsee)
+    ans3.addEventListener("click", truee)
+    ans4.addEventListener("click", falsee)
+
+    setTimeout(function () {
+        questionTwo()
+    }, 810);
+
 }
 
-/* function questionTwo{
-    question.textContent = ""
-    ans1.textContent = ""
-    ans1 = false
-    ans2.textContent = ""
-    ans2 = false
-    ans3,textContent = ""
-    ans3 = true
-    ans4.textContent = ""
-    ans4 = false
+function questionTwo(){
 
- }
+    question.textContent = "What is a variable?"
 
- function questionThree{
-    question.textContent = ""
-    ans1.textContent = ""
-    ans1 = false
-    ans2.textContent = ""
-    ans2 = false
-    ans3,textContent = ""
-    ans3 = true
-    ans4.textContent = ""
-    ans4 = false
- }
+    ans1.textContent = "A. Event"
+    ans2.textContent = "B. Container"
+    ans3, textContent = "C. Element"
+    ans4.textContent = "D. Both B and C"
 
- function questionFour{
-    question.textContent = ""
-    ans1.textContent = ""
-    ans1 = false
-    ans2.textContent = ""
-    ans2 = false
-    ans3,textContent = ""
-    ans3 = true
-    ans4.textContent = ""
-    ans4 = false
+    ans1.addEventListener("click", falsee)
+    ans2.addEventListener("click", falsee)
+    ans3.addEventListener("click", falsee)
+    ans4.addEventListener("click", truee)
+
 }
 
- function questionFive{
-    question.textContent = ""
-    ans1.textContent = ""
-    ans1 = false
-    ans2.textContent = ""
-    ans2 = false
-    ans3,textContent = ""
-    ans3 = true
-    ans4.textContent = ""
-    ans4 = false
- }*/
+/*function questionThree{
+   question.textContent = ""
+   ans1.textContent = ""
+   ans1 = false
+   ans2.textContent = ""
+   ans2 = false
+   ans3,textContent = ""
+   ans3 = true
+   ans4.textContent = ""
+   ans4 = false
+}
 
- //function truee and faulss are actions don by clicking on the quiz buttons
- function truee{
+function questionFour{
+   question.textContent = ""
+   ans1.textContent = ""
+   ans1 = false
+   ans2.textContent = ""
+   ans2 = false
+   ans3,textContent = ""
+   ans3 = true
+   ans4.textContent = ""
+   ans4 = false
+}
 
- }
+function questionFive{
+   question.textContent = ""
+   ans1.textContent = ""
+   ans1 = false
+   ans2.textContent = ""
+   ans2 = false
+   ans3,textContent = ""
+   ans3 = true
+   ans4.textContent = ""
+   ans4 = false
+}*/
+
+//function truee and falsee are actions done by clicking on the quiz buttons
+function truee() {
+    score.push(20)
+    document.getElementById("confirm").innerHTML = confirmMsg.textContent = "Correct!!!";
+    setTimeout(function () {
+        document.getElementById("confirm").innerHTML = '';
+    }, 800);
+}
+
+function falsee() {
+    ifTimeEnds.push(1)
+    time -= 5;
+    document.getElementById("confirm").innerHTML = confirmMsg.textContent = "Wrong";
+    setTimeout(function () {
+        document.getElementById("confirm").innerHTML = '';
+    }, 800);
+    setTimeout(function () {
+    }, 800);
+}

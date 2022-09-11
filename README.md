@@ -13,6 +13,11 @@ Provide a short description explaining the what, why, and how of your project. U
 
 https://www.youtube.com/watch?v=BMuFBYw91UQ
 
+https://uwa.bootcampcontent.com/UWA-Bootcamp/UW-VIRT-FSF-PT-08-2022-U-LOLC/-/blob/main/04-Web-APIs/01-Activities/Day-1/09-Ins_Timers-Intervals/script.js
+https://stackoverflow.com/questions/37594636/
+
+how-to-display-message-for-3-seconds-in-javascript
+
 ## License
 
 MIT License
