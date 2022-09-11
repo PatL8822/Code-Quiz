@@ -18,16 +18,18 @@
         <h1></h1>
         <ul>
             <li id="highScor"><button class="a">View High Scores</button></li>
-            <li>Time:</li>
+            <li id="timerText" class="hide">Time:</li>
             <li id="time"></li>
         </ul>
     </header>
     <section>
-        <h2 id="hide-two">Click the start button to take quize!!!</h2>
+        <!--there is a reason for the empty class on h2 the class is used in javaScript-->
+        <h2 id="hide-two" class="">Click the start button to take quize!!!</h2>
         <p class="str-btn btn"><button id="strBtn"></button></p>
     </section>
-    <main class="container" id="hide">
-        <p id="question"></p>
+    <main class="container hide" id="question-container">
+        <div id="questionEl">
+        <p id="question">Question</p>
         <p id="answer-buttons" class="btn-grid">
             <button id="ansOne" class="qbtn">Answer 1</button>
             <button id="ansTwo" class="qbtn">Answer 2</button>
@@ -35,7 +37,7 @@
             <button id="ansFour" class="qbtn">Answer 4</button>
             <p id="confirm" class="confirmation"></p>
         </p>
+        </div>
     </main>
 </body>
-
 </html>
