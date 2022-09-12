@@ -40,7 +40,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ## Screen Shot
+![Screenshot (6)](https://user-images.githubusercontent.com/110148234/189589794-a23b204b-1086-4e67-bb72-c0031a2c7a5c.png)
 
 
 
 ## Link to work
+https://patl8822.github.io/Code-Quiz/
