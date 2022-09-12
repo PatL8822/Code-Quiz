@@ -109,3 +109,12 @@ h2 {
 .hide {
     display: none;
 }
+
+input{
+    height: 35px;
+}
+
+#localSubmit{
+    
+    height: 30px;
+}

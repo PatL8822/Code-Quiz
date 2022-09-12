@@ -2,12 +2,7 @@
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+My motivation for building a quiz is that it takes a lot of Javascript work to make everything function just right. So I chose a code quiz to help other people to think further in depth about their coding projects. I learned so much doing this project different types of syntax, shortening code, running timers and delays of code to get things to pop up and time out  just right, the list goes on. I will be back to fully complete this project as soon as I can.
 
 ## Credits
 
@@ -17,6 +12,8 @@ https://uwa.bootcampcontent.com/UWA-Bootcamp/UW-VIRT-FSF-PT-08-2022-U-LOLC/-/blo
 https://stackoverflow.com/questions/37594636/
 
 how-to-display-message-for-3-seconds-in-javascript
+
+https://www.youtube.com/watch?v=YQpCfx3E9v0
 
 ## License
 

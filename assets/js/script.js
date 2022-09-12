@@ -23,13 +23,18 @@ var confirmMsg = document.getElementById("confirm");
 var highScore = document.getElementById('highScor');
 var timerText = document.getElementById('timerText');
 const span = document.getElementById('span');
+const localStorageInput = document.getElementById('localStorageInput');
 const setScore = document.getElementById('quizeScore');
+const localSubmit = document.getElementById('localSubmit');
+const nameInput = document.getElementById('nameInput');
+const results = document.getElementById('results');
+const viweLocalStorage = document.getElementById('viweLocalStorage');
 // the (let questionIndex) is undefined, need the cotainer so it can be redefined later in the code.
 let questionIndex, currentQuestionIndex;
 var time = 100;
 var timeTwo = 1;
 var quizeScore = 0;
-var finalScore
+
 
 // setting the text h1 tag
 h1[0].textContent = "~ Quiz ~";
@@ -206,6 +211,25 @@ function thatsIt() {
 }
 
 function quizScor(){
+    highScore.classList.remove('hide')
+    localSubmit.classList.remove('hide')
+    localSubmit.addEventListener('click', ()=> {
+        localStorage.setItem('name',nameInput.value)
+    });
+    viweLocalStorage.addEventListener('submit', viewHighScores,function(e){e.preventDefault});
     setScore.classList.remove('hide')
+    localStorageInput.classList.remove('hide')
     span.innerText = quizeScore;
+}
+
+function addToLocalSotage(){
+   
+}
+
+function viewHighScores(){
+
+    setScore.classList.add('hide')
+    highScore.classList.add('hide')
+    localSubmit.classList.add('hide')
+    localStorageInput.classList.add('hide')
 }
